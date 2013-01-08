@@ -130,7 +130,7 @@ BUFFER-LIST."
     (+ (current-indentation) (line-beginning-position))))
 
 (defun es-line-empty-p ()
-  (es-line-matches-p "^[ 	]*$"))
+  (es-line-matches-p "^[[:space:][:cntrl:]]*$"))
 
 (defun es-line-visible-p ()
   (not (es-line-empty-p)))
